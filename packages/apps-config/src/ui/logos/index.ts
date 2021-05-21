@@ -76,6 +76,7 @@ import nodePolkadot from './nodes/polkadot-circle.svg';
 import nodePolkadotJs from './nodes/polkadot-js.svg';
 import nodePolkaFoundry from './nodes/polkafoundry.svg';
 import nodePolymesh from './nodes/polymesh.svg';
+import nodePontem from './nodes/pontem.svg';
 import nodePrism from './nodes/prism.png';
 import nodeRealis from './nodes/realis.png';
 import nodeRiochain from './nodes/riochain.svg';
@@ -151,6 +152,7 @@ export const chainLogos: Record<string, unknown> = [
   ['PolkaBTC Staging', nodePolkaBTC],
   ['Polkadex Testnet', nodePolkadex],
   ['PolkaFoundry PC1', nodePolkaFoundry],
+  ['Pontem', nodePontem],
   ['Prism Testnet', nodePrism],
   ['Prism PC1', nodePrism],
   ['Phala PC1', nodePhala],
@@ -243,6 +245,7 @@ export const nodeLogos: Record<string, unknown> = [
   ['Pangolin', nodePangolin],
   ['Patract Node', nodeJupiter],
   ['Polkadex Node', nodePolkadex],
+  ['Pontem', nodePontem],
   ['Prism Node', nodePrism],
   ['Prism Collator', nodePrism],
   ['parity-polkadot', nodePolkadot],
@@ -257,6 +260,7 @@ export const nodeLogos: Record<string, unknown> = [
   ['polkadot-js', nodePolkadotJs],
   ['PolkaFoundry Node', nodePolkaFoundry],
   ['PolkaFoundry Parachain Collator', nodePolkaFoundry],
+  ['Pontem', nodePontem],
   ['ReAlis Network', nodeRealis],
   ['Rio Defi Chain Node', nodeRiochain],
   ['RioChain Staging', nodeRiochain],
@@ -348,6 +352,7 @@ export const namedLogos: Record<string, unknown> = {
   polkadot: nodePolkadot,
   polkafoundry: nodePolkaFoundry,
   polymesh: nodePolymesh,
+  pontem: nodePontem,
   prism: nodePrism,
   realis: nodeRealis,
   riochain: nodeRiochain,

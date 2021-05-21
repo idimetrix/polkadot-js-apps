@@ -2532,6 +2532,7 @@ __metadata:
     "@zeitgeistpm/type-defs": ^0.1.51
     i18next: ^19.9.2
     moonbeam-types-bundle: 1.1.15
+    pontem-types-bundle: ^1.0.0
   languageName: unknown
   linkType: soft
 
@@ -15021,6 +15022,17 @@ fsevents@~2.1.2:
     webpack-cli: ^4.7.0
   languageName: unknown
   linkType: soft
+
+"pontem-types-bundle@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "pontem-types-bundle@npm:1.0.0"
+  dependencies:
+    "@polkadot/keyring": ^6.3.1
+    "@polkadot/types": ^4.9.2
+    typescript: ^4.2.4
+  checksum: 885ab022fb725e5aaf93038c2510af019d5b869f0770831372c317abda0f88f9734bad132af5737b5483baf66266235ba9c9b34d860cba64c761adb897aaa35c
+  languageName: node
+  linkType: hard
 
 "popper.js@npm:^1.14.4":
   version: 1.16.1

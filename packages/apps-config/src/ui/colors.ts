@@ -37,6 +37,7 @@ const chainPolkabtc = '#510101';
 const chainPolkadex = '#7C30DD';
 const chainPolkadot = '#e6007a';
 const chainPolkaFoundry = '#ff527c';
+const chainPontem = '#A92FAC';
 const chainPrism = 'linear-gradient(45deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%)';
 const chainKilt = '#8c175b';
 const chainKonomi = '#007aff';
@@ -100,6 +101,7 @@ const nodePangolin = '#5744ff';
 const nodeParami = '#ee06e2';
 const nodePolkadex = '#7C30DD';
 const nodePolymesh = '#1348e4';
+const nodePontem = '#A92FAC';
 const nodePrism = 'linear-gradient(45deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%)';
 const nodeRealis = 'linear-gradient(45deg, #E8AAC9 0%, #C4D9E7 50%, #EFD6E0 100%)';
 const nodeRiochain = '#1A3BB3';
@@ -185,6 +187,7 @@ export const chainColors: Record<string, any> = [
   ['Polkadex Testnet', chainPolkadex],
   ['Polkadot CC1', chainPolkadot],
   ['Polkadot', chainPolkadot],
+  ['Pontem', chainPontem],
   ['Prism Testnet', chainPrism],
   ['Prism PC1', chainPrism],
   ['ReAlis Network', nodeRealis],
@@ -246,6 +249,7 @@ export const nodeColors: Record<string, any> = [
   ['Patract Node', nodeJupiter],
   ['Polkadex Node', nodePolkadex],
   ['Polymesh Node', nodePolymesh],
+  ['Pontem', nodePontem],
   ['Prism Node', nodePrism],
   ['Prism Collator', nodePrism],
   ['ReAlis Network', nodeRealis],

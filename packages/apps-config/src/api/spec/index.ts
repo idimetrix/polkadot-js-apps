@@ -63,6 +63,7 @@ import polkabtc from './polkabtc';
 import polkadex from './polkadex';
 import polkafoundry from './polkafoundry';
 import polymesh from './polymesh';
+import pontem from './pontem';
 import prism from './prism';
 import realis from './realis';
 import riochain from './riochain';
@@ -164,6 +165,7 @@ const spec: Record<string, OverrideBundleDefinition> = {
   plasm,
   'plasm-parachain': plasmParachain,
   polymesh,
+  pontem,
   prism,
   realis,
   'riochain-runtime': riochain,

@@ -343,6 +343,14 @@ export function createRococo (t: TFunction): EndpointOption {
         }
       },
       {
+        info: 'rococoPontem',
+        paraId: 6806,
+        text: t('rpc.rococo.pontem', 'Pontem', { ns: 'apps-config' }),
+        providers: {
+          Pontem: 'wss://testnet.pontem.network/wss'
+        }
+      },
+      {
         info: 'rococoRobonomics',
         paraId: 3000,
         text: t('rpc.rococo.robonomics', 'Robonomics PC2', { ns: 'apps-config' }),
