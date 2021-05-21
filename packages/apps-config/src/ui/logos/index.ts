@@ -53,6 +53,7 @@ import nodeIdavoll from './nodes/idavoll.png';
 import nodeIntegritee from './nodes/integritee.png';
 import nodeIpse from './nodes/ipse.png';
 import nodeJupiter from './nodes/jupiter.svg';
+import nodeKhala from './nodes/khala.svg';
 import nodeKilt from './nodes/kilt.svg';
 import nodeKonomi from './nodes/konomi.png';
 import nodeKulupu from './nodes/kulupu.svg';
@@ -81,9 +82,11 @@ import nodePrism from './nodes/prism.png';
 import nodeRealis from './nodes/realis.png';
 import nodeRiochain from './nodes/riochain.svg';
 import nodeRobonomics from './nodes/robonomics.svg';
+import nodeShadow from './nodes/shadow.svg';
 import nodeShell from './nodes/shell.svg';
 import nodeSora from './nodes/sora-substrate.svg';
 import nodeStafi from './nodes/stafi.png';
+import nodeStatemine from './nodes/statemine.svg';
 import nodeStatemint from './nodes/statemint-3.png';
 import nodeSubDAO from './nodes/subdao.png';
 import nodeSubsocial from './nodes/subsocial.svg';
@@ -160,7 +163,8 @@ export const chainLogos: Record<string, unknown> = [
   ['Rococo', chainRococo],
   ['RioChain CC-1', nodeRiochain],
   ['RioChain Staging', nodeRiochain],
-  ['Shell', nodeShell],
+  ['Statemine', nodeStatemine],
+  ['Statemint', nodeStatemint],
   ['Statemint Test', nodeStatemint],
   ['SubDAO PC1', nodeSubDAO],
   ['Subsocial', nodeSubsocial],
@@ -227,6 +231,8 @@ export const nodeLogos: Record<string, unknown> = [
   ['GEEK', nodeGeek],
   ['hanonycash', nodeHanonycash],
   ['Idavoll Node', nodeIdavoll],
+  ['Khala', nodeKhala],
+  ['Khala Node', nodeKhala],
   ['KILT Node', nodeKilt],
   ['KILT Collator', nodeKilt],
   ['kulupu', nodeKulupu],
@@ -264,6 +270,7 @@ export const nodeLogos: Record<string, unknown> = [
   ['ReAlis Network', nodeRealis],
   ['Rio Defi Chain Node', nodeRiochain],
   ['RioChain Staging', nodeRiochain],
+  ['Shadow', nodeShadow],
   ['SORA', nodeSora],
   ['Stafi Node', nodeStafi],
   ['Stafi', nodeStafi],
@@ -272,6 +279,7 @@ export const nodeLogos: Record<string, unknown> = [
   ['subsocial-node', nodeSubsocial],
   ['Subsocial Node', nodeSubsocial],
   ['Subsocial PC', nodeSubsocial],
+  ['sherpax', nodeChainx],
   ['substrate-node', nodeSubstrate],
   ['subzero node', nodeZero],
   ['Ternoa Node', nodeTernoa],
@@ -293,6 +301,16 @@ export const nodeLogos: Record<string, unknown> = [
 ].reduce((logos, [node, logo]): Record<string, unknown> => ({
   ...logos,
   [(node as string).toLowerCase().replace(/-/g, ' ')]: logo
+}), {});
+
+// Alphabetical overrides based on the actual specName
+export const specLogos: Record<string, unknown> = [
+  ['shell', nodeShell],
+  ['statemine', nodeStatemine],
+  ['statemint', nodeStatemint]
+].reduce((logos, [spec, logo]): Record<string, unknown> => ({
+  ...logos,
+  [(spec as string).toLowerCase().replace(/-/g, ' ')]: logo
 }), {});
 
 // Alphabetical overrides when we pass an explicit logo name
@@ -332,6 +350,7 @@ export const namedLogos: Record<string, unknown> = {
   idavoll: nodeIdavoll,
   ipse: nodeIpse,
   jupiter: nodeJupiter,
+  khala: nodeKhala,
   kilt: nodeKilt,
   kulupu: nodeKulupu,
   kusama: chainKusama,
@@ -389,6 +408,7 @@ export const namedLogos: Record<string, unknown> = {
   rococoPlasm: nodePlasm,
   rococoPolkaFoundry: nodePolkaFoundry,
   rococoPolkabtc: chainPolkaBTC,
+  rococoPrism: nodePrism,
   rococoRobonomics: nodeRobonomics,
   rococoStatemint: nodeStatemint,
   rococoSubDAO: nodeSubDAO,
@@ -401,10 +421,14 @@ export const namedLogos: Record<string, unknown> = {
   rococoVln: nodeVln,
   rococoZeitgeist: nodeZeitgeist,
   rococoZenlink: nodeZenlink,
+  shadow: nodeShadow,
   shell: nodeShell,
+  sherpax: nodeChainx,
   snakenet: chainSnakenet,
   'sora-substrate': nodeSora,
   stafi: nodeStafi,
+  statemine: nodeStatemine,
+  statemint: nodeStatemint,
   subsocial: nodeSubsocial,
   substrate: nodeSubstrate,
   'ternoa-chaos': nodeTernoa,

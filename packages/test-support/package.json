@@ -1,10 +1,10 @@
 {
   "name": "@polkadot/test-support",
   "private": true,
-  "version": "0.90.2-63",
+  "version": "0.91.3-16",
   "license": "Apache-2.0",
   "dependencies": {
-    "@testing-library/react": "^11.2.6",
+    "@testing-library/react": "^11.2.7",
     "testcontainers": "^7.10.0"
   },
   "devDependencies": {
